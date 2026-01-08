@@ -13,23 +13,32 @@ TSwing mirrors Java Swing's component architecture for building terminal applica
 ## Quick Start
 
 ### Run TSwing Demo Applications
+Detailed examples can be found in the [examples](examples) directory.
 
 **Hello World Demo:**
 ```bash
-mvn compile exec:java -Dexec.mainClass="examples.dev.shaaf.tswing.HelloTSwing"
+mvn compile exec:java -Dexec.mainClass="dev.shaaf.tswing.examples.HelloTSwing"
 ```
 
 **Multi-Button Demo:**
 ```bash
-mvn compile exec:java -Dexec.mainClass="examples.dev.shaaf.tswing.MultiButtonDemo"
+mvn compile exec:java -Dexec.mainClass="dev.shaaf.tswing.examples.MultiButtonDemo"
+```
+
+**Dialog Demo:**
+```bash
+mvn compile exec:java -Dexec.mainClass="dev.shaaf.tswing.examples.DialogDemo"
+```
+
+**Layout Showcase:**
+```bash
+mvn compile exec:java -Dexec.mainClass="dev.shaaf.tswing.examples.LayoutShowcase"
 ```
 
 **Controls:**
 - `TAB` - Move focus to next component
 - `ENTER` - Activate focused button
 - `ESC` - Close the application
-
-Detailed examples can be found in the [examples](examples) directory.
 
 ```java
 // Create a frame
